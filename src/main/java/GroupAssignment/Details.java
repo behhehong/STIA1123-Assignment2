@@ -235,12 +235,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             summery2 = jTextNewDeaths.getText();
 
             try{
-                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Malaysia New Case.txt"), true));
+                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("Malaysia New Case.txt"), true));
                 writer1.write(summery1);
                 writer1.newLine();
                 writer1.close();
 
-                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Malaysia New Death.txt"), true));
+                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("Malaysia New Death.txt"), true));
                 writer2.write(summery2);
                 writer2.newLine();
                 writer2.close();
@@ -254,12 +254,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             String Data1 = String.valueOf(TotalCase);
             String Data2 = String.valueOf(TotalDeath);
             try {
-                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Malaysia TotalCase.txt"), true));
+                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("Malaysia TotalCase.txt"), true));
                 writer3.write(Data1);
                 writer3.newLine();
                 writer3.close();
 
-                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Malaysia TotalDeath.txt"), true));
+                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("Malaysia TotalDeath.txt"), true));
                 writer4.write(Data2);
                 writer4.newLine();
                 writer4.close();
@@ -318,12 +318,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             }
 
             try{
-                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\USA TotalDeath.txt"), true));
+                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("USA New Case.txt"), true));
                 writer1.write(summery1);
                 writer1.newLine();
                 writer1.close();
 
-                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\USA New Death.txt"), true));
+                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("USA New Death.txt"), true));
                 writer2.write(summery2);
                 writer2.newLine();
                 writer2.close();
@@ -337,12 +337,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             String Data1 = String.valueOf(TotalCase);
             String Data2 = String.valueOf(TotalDeath);
             try {
-                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\USA TotalCase.txt"), true));
+                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("USA TotalCase.txt"), true));
                 writer3.write(Data1);
                 writer3.newLine();
                 writer3.close();
 
-                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\USA TotalDeath.txt"), true));
+                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("USA TotalDeath.txt"), true));
                 writer4.write(Data2);
                 writer4.newLine();
                 writer4.close();
@@ -355,21 +355,6 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
         else if(getItem.equals(country[2])){
             summery1 = jTextNewCases.getText();
             summery2 = jTextNewDeaths.getText();
-
-            File file1 = new File("Brazil New Case.txt");
-            File file2 = new File("Brazil New Death.txt");
-            File file3 = new File("Brazil TotalCase.txt");
-            File file4 = new File("Brazil TotalDeath.txt");
-
-            try {
-                file1.createNewFile();
-                file2.createNewFile();
-                file3.createNewFile();
-                file4.createNewFile();
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
             try{
                 BufferedReader totalCase = new BufferedReader(new FileReader("Brazil TotalCase.txt"));
@@ -394,12 +379,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             }
 
             try{
-                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Brazil New Case.txt"), true));
+                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("Brazil New Case.txt"), true));
                 writer1.write(summery1);
                 writer1.newLine();
                 writer1.close();
 
-                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Brazil New Death.txt"), true));
+                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("Brazil New Death.txt"), true));
                 writer2.write(summery2);
                 writer2.newLine();
                 writer2.close();
@@ -413,12 +398,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             String Data1 = String.valueOf(TotalCase);
             String Data2 = String.valueOf(TotalDeath);
             try {
-                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Brazil TotalCase.txt"), true));
+                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("Brazil TotalCase.txt"), true));
                 writer3.write(Data1);
                 writer3.newLine();
                 writer3.close();
 
-                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\Brazil TotalDeath.txt"), true));
+                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("Brazil TotalDeath.txt"), true));
                 writer4.write(Data2);
                 writer4.newLine();
                 writer4.close();
@@ -431,21 +416,6 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
         else if(getItem.equals(country[3])){
             summery1 = jTextNewCases.getText();
             summery2 = jTextNewDeaths.getText();
-
-            File file1 = new File("India New Case.txt");
-            File file2 = new File("India New Death.txt");
-            File file3 = new File("India TotalCase.txt");
-            File file4 = new File("India TotalDeath.txt");
-
-            try {
-                file1.createNewFile();
-                file2.createNewFile();
-                file3.createNewFile();
-                file4.createNewFile();
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
             try{
                 BufferedReader totalCase = new BufferedReader(new FileReader("India TotalCase.txt"));
@@ -470,12 +440,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             }
 
             try{
-                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\India New Case.txt"), true));
+                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("India New Case.txt"), true));
                 writer1.write(summery1);
                 writer1.newLine();
                 writer1.close();
 
-                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\India New Death.txt"), true));
+                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("India New Death.txt"), true));
                 writer2.write(summery2);
                 writer2.newLine();
                 writer2.close();
@@ -489,12 +459,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             String Data1 = String.valueOf(TotalCase);
             String Data2 = String.valueOf(TotalDeath);
             try {
-                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\India TotalCase.txt"), true));
+                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("India TotalCase.txt"), true));
                 writer3.write(Data1);
                 writer3.newLine();
                 writer3.close();
 
-                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\India TotalDeath.txt"), true));
+                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("India TotalDeath.txt"), true));
                 writer4.write(Data2);
                 writer4.newLine();
                 writer4.close();
@@ -506,21 +476,6 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
         else{
             summery1 = jTextNewCases.getText();
             summery2 = jTextNewDeaths.getText();
-
-            File file1 = new File("China New Case.txt");
-            File file2 = new File("China New Death.txt");
-            File file3 = new File("China TotalCase.txt");
-            File file4 = new File("China TotalDeath.txt");
-
-            try {
-                file1.createNewFile();
-                file2.createNewFile();
-                file3.createNewFile();
-                file4.createNewFile();
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
             try{
                 BufferedReader totalCase = new BufferedReader(new FileReader("China TotalCase.txt"));
@@ -545,12 +500,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             }
 
             try{
-                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\China New Case.txt"), true));
+                BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File("China New Case.txt"), true));
                 writer1.write(summery1);
                 writer1.newLine();
                 writer1.close();
 
-                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\China New Death.txt"), true));
+                BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File("China New Death.txt"), true));
                 writer2.write(summery2);
                 writer2.newLine();
                 writer2.close();
@@ -564,12 +519,12 @@ public class Details extends JFrame implements GroupAssignment.Implementation {
             String Data1 = String.valueOf(TotalCase);
             String Data2 = String.valueOf(TotalDeath);
             try {
-                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\China TotalCase.txt"), true));
+                BufferedWriter writer3 = new BufferedWriter(new FileWriter(new File("China TotalCase.txt"), true));
                 writer3.write(Data1);
                 writer3.newLine();
                 writer3.close();
 
-                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("C:\\Users\\USER\\Documents\\Assignment & Homework\\Sem 2\\Programming 2\\GroupAssignment\\China TotalDeath.txt"), true));
+                BufferedWriter writer4 = new BufferedWriter(new FileWriter(new File("China TotalDeath.txt"), true));
                 writer4.write(Data2);
                 writer4.newLine();
                 writer4.close();
